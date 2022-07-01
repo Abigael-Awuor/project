@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awerus Website</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div class="logo">
+          <img src="./images/IMG-20220614-WA0002-removebg-preview (1).png" />
+        </div>
+        <div class="nav-links" id="navlinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu ()"></i>
+          <ul>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#about"> Who We Are</a></li>
+            <li><a href="#service"> What We Do</a></li>
+            <li><a href="#product"> Product</a></li>
+            <li><a href="#contact"> Contact </a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Welcome to Awerus,</h1>
+        <p>A perfect & friendly environment for learning</p>
+        <img src="./images/images__1_-removebg-preview.png" />
+      </div>
+    </section>
+    <!-- aboutpage -->
+    <section class="about" id="about">
+      <h1 class="me"><span>Who We</span> Are</h1>
+    
+        <p>
+          <div class="work-col">
+          <span style="font-weight: bolder">
+          W</span>e are a company in Kenya that offer
+          online learning and translation of Kenyan Local Languages.
+          Our core value is to always keep our learners motivated with the most engaging content,
+        And we also ensure they get excellent and high quality of Translation
+        </p>
+      </div>
+      <img src="./images/image55.png" />
+    </section>
+
+    <!-- servicepage -->
+    <section class="service" id="service">
+      <h1 class="serve">Our Services</h1>
+      <div class="work-col">
+        <h2>Translation Service</h2>
+        <p>
+          We guarantee fluent, accurate and high quality translation services to
+          suit your need.<br />Our team provides you with high-quality content
+          translation that will help you outstand in your communication.<br />
+          Our services are available in all Kenyan Local Languages. We want to
+          ensure that our clients are completely satisfied.
+        </p>
+        <img src="./images/tttt.jpg" alt="translationservice" />
+      </div>
+    </section>
+    
+    <!-- contactuspage -->
+
+    <section class="contact" id="contact">
+      <h1 class="section-header">Contact</h1>
+
+      <div class="contact-wrapper">
+        <!-- Left contact page -->
+
+        <form id="contact-form" class="form-horizontal" role="form">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NAME"
+                name="name"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="EMAIL"
+                name="email"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <textarea
+            class="form-control"
+            rows="10"
+            placeholder="MESSAGE"
+            name="message"
+            required
+          ></textarea>
+
+          <button
+            class="btn btn-primary send-button"
+            id="submit"
+            type="submit"
+            value="SEND"
+          >
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i
+              ><span class="send-text">SEND</span>
+            </div>
+          </button>
+        </form>
+
+        <!-- Left contact page -->
+
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fa fa-map-marker fa-2x"
+                ><span class="contact-text place">Nairobi, City</span></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-phone fa-2x"
+                ><span class="contact-text phone"
+                  ><a href="tel:1-212-555-5555" title="Give us a call"
+                    >(254) 717-305080</a
+                  ></span
+                ></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-envelope fa-2x"
+                ><span class="contact-text gmail"
+                  ><a href="mailto:#" title="Send us an email"
+                    >info@awerus.com</a
+                  ></span
+                ></i
+              >
+            </li>
+          </ul>
+
+          <hr />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- products -->
+       <section class="product" id="product">
+        <h1 class="pro">Products</h1>
+     
+          <div class="pro-col">
+          <img src="./images/image.jpg">
+             <h1>E-learning</h1>
+           </div>
+           <div class="pro-col2">
+            <img src="./images/mage.jpg">
+               <h1>Books</h1>
+             </div>
+      </section>
+
+    <script>
+      var navlinks = document.getElementById(`navlinks`);
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+    <script src="./js/awe.js"></script>
+  </body>
+</html>
